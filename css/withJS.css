@@ -3,6 +3,7 @@
     --border-radius: .2rem;
     --secondary-color: #b7f6b0;
     --text-secondary: #3e3e3e;
+    --box-shadow: 0px 0px 1rem rgba(0, 0, 0, .5);
 }
 
 * {
@@ -22,10 +23,13 @@ body {
 /* Timeline================================ */
 #timeline {
     overflow-x: hidden;
+    margin-bottom: 3rem;
 }
 
 #timeline h1 {
     padding: 2rem 2.5rem;
+    text-align: center;
+    font-size: 2.3rem;
 }
 
 #timeline ul li {
@@ -109,4 +113,12 @@ body {
     right: -15px;
     border-width: 8px 0px 8px 16px;
     border-color: transparent transparent transparent var(--secondary-color);
+}
+
+/* Show boxes */
+#timeline ul li.show div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+    box-shadow: var(--box-shadow);
 }

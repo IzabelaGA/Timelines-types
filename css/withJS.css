@@ -1,5 +1,6 @@
 :root {
     --text-primary: #1a1a1a;
+    --border-radius: .2rem;
 }
 
 * {
@@ -27,4 +28,14 @@ body {
 
 #timeline ul li {
     list-style: none;
+}
+
+/* Create Line */
+#timeline>ul>li {
+    position: relative;
+    width: .4rem;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: var(--text-primary);
+    border-radius: var(--border-radius);
 }

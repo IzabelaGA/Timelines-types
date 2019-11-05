@@ -80,3 +80,14 @@ body {
     transition: background .5s ease-in-out;
 }
 
+/* Arrows base */
+#timeline div::before {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    width: 0;
+    height: 0;
+    border: solid;
+}
+
+

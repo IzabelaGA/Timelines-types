@@ -2,6 +2,7 @@
     --text-primary: #1a1a1a;
     --border-radius: .2rem;
     --secondary-color: #b7f6b0;
+    --text-secondary: #3e3e3e;
 }
 
 * {
@@ -49,21 +50,21 @@ body {
     padding: 1rem 1.5rem;
     background: var(--secondary-color);
     transition: all .5s ease-in-out;
-    /* visibility: hidden; */
-    /* opacity: 0; */
+    visibility: hidden;
+    opacity: 0;
     border-radius: var(--border-radius);
 }
 
 /* Right Side */
 #timeline ul li:nth-child(odd) div {
     left: 2.5rem;
-    /* transform: translate(12.5rem, 0); */
+    transform: translate(12.5rem, 0);
 }
 
 /* Left Side */
 #timeline ul li:nth-child(even) div {
     left: calc(-25rem - 2.5rem + .4rem );
-    /* transform: translate(-12.5rem, 0); */
+    transform: translate(-12.5rem, 0);
 }
 
 /* Dots */
@@ -78,6 +79,12 @@ body {
     transform: translateX(-50%);
     border-radius: 50%;
     transition: background .5s ease-in-out;
+}
+
+#timeline ul li.show::after {
+    background: var(--secondary-color);
+    border: .4rem solid var(--text-secondary);
+    box-sizing: content-box;
 }
 
 /* Arrows base */

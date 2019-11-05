@@ -65,3 +65,18 @@ body {
     left: calc(-25rem - 2.5rem + .4rem );
     /* transform: translate(-12.5rem, 0); */
 }
+
+/* Dots */
+#timeline>ul>li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background: inherit;
+    width: 1rem;
+    height: 1rem;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    transition: background .5s ease-in-out;
+}
+

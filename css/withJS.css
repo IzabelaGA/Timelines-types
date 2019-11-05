@@ -1,6 +1,7 @@
 :root {
     --text-primary: #1a1a1a;
     --border-radius: .2rem;
+    --secondary-color: #b7f6b0;
 }
 
 * {
@@ -37,5 +38,18 @@ body {
     margin: 0 auto;
     padding-top: 50px;
     background: var(--text-primary);
+    border-radius: var(--border-radius);
+}
+
+/* Boxes */
+#timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 25rem;
+    padding: 1rem 1.5rem;
+    background: var(--secondary-color);
+    transition: all .5s ease-in-out;
+    /* visibility: hidden; */
+    /* opacity: 0; */
     border-radius: var(--border-radius);
 }

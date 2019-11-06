@@ -89,3 +89,19 @@ h1 span {
     justify-content: space-between;
     clear: both;
 }
+
+/* Float right for placing right-side */
+.timeline-block-right {
+    float: right;
+}
+
+.timeline-block-left {
+    float: left;
+    direction: rtl;
+}
+
+/* Left to right for text only */
+.timeline-block-left p {
+    direction: ltr;
+}
+

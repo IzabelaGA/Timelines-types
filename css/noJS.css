@@ -52,14 +52,13 @@ h1 span {
 
 /* Style for beautify */
 .timeline-content h3 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: .3rem 0;
     font-size: 1.6rem;
     font-weight: 500
 }
 
 .timeline-content span {
-    font-size: 15px;
+    font-size: .9rem;
     color: #a4a4a4;
 }
 
@@ -81,4 +80,12 @@ h1 span {
     height: 100%;
     background: #CCD1D9;
     z-index: 1
+}
+
+/* create content "boxes" */
+.container .timeline-block {
+    width: calc(50% + .5rem);
+    display: flex;
+    justify-content: space-between;
+    clear: both;
 }

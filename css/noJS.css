@@ -69,3 +69,16 @@ h1 span {
     margin: 1rem;
     word-spacing: 1px;
 }
+
+/* Create line */
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: #CCD1D9;
+    z-index: 1
+}

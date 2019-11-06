@@ -104,6 +104,7 @@ h1 span {
 /* Left to right for text only */
 .timeline-block-left p {
     direction: ltr;
+    text-align: right;
 }
 
 /* Dots ?? */
@@ -113,7 +114,7 @@ h1 span {
     border-radius: 50%;
     border: 3px solid #ccd1d9;
     background: salmon;
-    margin-top: .7rem;
+    margin-top: .8rem;
     z-index: 2;
 }
 
@@ -145,6 +146,9 @@ h1 span {
     .timeline-block-left {
         float: none;
         direction: ltr;
+    }
+    .timeline-block-left p{
+        text-align: left;
     }
     .timeline-content{
         padding: 0;

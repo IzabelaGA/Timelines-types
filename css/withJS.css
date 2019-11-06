@@ -67,7 +67,7 @@ body {
 
 /* Left Side */
 #timeline ul li:nth-child(even) div {
-    left: calc(-25rem - 2.5rem + .4rem );
+    left: calc(-25rem - 2.5rem + .4rem);
     transform: translate(-12.5rem, 0);
 }
 
@@ -121,4 +121,37 @@ body {
     visibility: visible;
     opacity: 1;
     box-shadow: var(--box-shadow);
+}
+
+/* Media Queries */
+
+@media(max-width: 900px){
+    #timeline ul li div {
+        width: 16rem;
+    }
+    #timeline ul li:nth-child(even) div {
+        left: calc(-16rem - 2.5rem + .4rem);
+        
+    }
+}
+
+@media(max-width:600px) {
+    #timeline>ul>li {
+        margin-left: 1.5rem;
+    }
+
+    #timeline ul li div {
+        width: calc(100vw - 90px);
+    }
+
+    #timeline ul li:nth-child(even) div {
+        left: 2.5rem;
+    }
+
+    /* Right Side Arrows */
+    #timeline ul li:nth-child(even) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent var(--secondary-color)transparent transparent;
+    }
 }

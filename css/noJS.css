@@ -105,3 +105,13 @@ h1 span {
     direction: ltr;
 }
 
+/* Dots ?? */
+.marker {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 3px solid #ccd1d9;
+    background: salmon;
+    margin-top: .7rem;
+    z-index: 2;
+}

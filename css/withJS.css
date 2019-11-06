@@ -126,6 +126,10 @@ body {
 /* Media Queries */
 
 @media(max-width: 900px){
+h1{
+    margin: 2rem 0;
+}
+
     #timeline ul li div {
         width: 16rem;
     }

@@ -115,3 +115,8 @@ h1 span {
     margin-top: .7rem;
     z-index: 2;
 }
+
+.timeline-content {
+    width: 95%;
+    padding: 0 1rem;
+}

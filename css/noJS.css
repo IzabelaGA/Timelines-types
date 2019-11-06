@@ -120,3 +120,32 @@ h1 span {
     width: 95%;
     padding: 0 1rem;
 }
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 2rem 1rem;
+    }
+
+    .container::before {
+        left: 1.5rem;
+    }
+
+    .container .timeline-block {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .timeline-block-right {
+        float: none;
+    }
+
+    .timeline-block-left {
+        float: none;
+        direction: ltr;
+    }
+    .timeline-content{
+        padding: 0;
+    }
+}
